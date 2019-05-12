@@ -1,0 +1,187 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    line-height: 150%;
+    counter-reset: h2;
+    background-image: linear-gradient( rgb(211, 150, 17), rgb(255,204,0));
+    background-repeat: no-repeat;
+
+    }
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.6em 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-size: 50pt;
+    counter-reset: h3;
+    text-align: center;
+    color: white;
+}
+
+h2::before {
+    content: counter(h2, upper-roman)'. ';
+    counter-increment: h2;
+}
+
+h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+h3::before {
+    content: counter(h2, upper-roman)'.' counter(h3, upper-roman) '.';
+    counter-increment: h3;
+}
+
+p {
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    margin-bottom: 100px;
+    text-align: justify;
+    font-size: 23px;
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+.p {
+    text-align: center;
+    font-size: 27px;
+    margin: 1em;
+}
+
+/* Layout - rozložení stránky*/
+.container {
+    max-width: 1200px;
+    margin:  auto;
+}
+
+
+#obsah {
+  background-color: rgb(97, 97, 97);
+  color: white;
+  padding: 1em 1em;
+}
+
+header {
+    color: rgb(73, 73, 73);
+    text-align: center;
+}
+
+footer {
+    background-color:  rgb(73, 73, 73);
+    color: white;
+    padding-top: 2em;
+    text-align: center;
+}
+
+/*Navigace*/
+.navbar {background-color: rgb(211, 150, 17);}
+
+.navbar ul {display: flex;}
+/*Zobrazení pro mobily*/
+@media only screen and (max-width: 600px) {
+    .navbar ul{
+        display: block;
+    }
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+  }
+
+  .navbar ul li a:hover {
+    color: rgb(255, 204, 0);
+    background-color: rgb(48, 48, 48);
+  }
+
+  .navbar .dropdown {
+      color: rgb(255, 204, 0);
+      position: absolute;
+      right: 10px;
+      top: 7px;
+  }
+
+  .bg-text {
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border: 10px solid #f1f1f1;
+    left: 50%;
+    top: 50;
+    transform: translate(-50%, -165%);
+    z-index: 2;
+    width: 450px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .img1 { 
+    background-image:  url("img/David-Belle-parkour.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1040px;
+    background-size: 100% 100%;}
+    
+    a:link {text-decoration: underline;}
+    a:visited {color: white;}
+      
+    a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+
+    .hranice {
+        border-block-start: 50%;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        background-color: rgb(48, 48, 48);
+    }  
+
+    /*stránky*/
+    .container1 {
+        max-width: 1200px;
+        margin:  auto;
+        background-color: rgb(73,73,73);
+    }
+    .h1 {
+        font-size: 100px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .header {
+        color: rgb(73, 73, 73);
+        text-align: center;
+        background-image: linear-gradient( rgb(255,204,0), rgb(211, 150, 17));
+    }
+    ul {
+        color: white;
+        font-size: 23px;
+
+    }
+    .p1 {
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 60px;
+        margin-bottom: 10px;
+        text-align: justify;
+        font-size: 23px;
+        background-color: rgb(73, 73, 73);
+        color: white;
+    }
