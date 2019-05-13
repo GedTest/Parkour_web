@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parkour</title>
+    <meta name="description" content="Parkour - svět je tvým hřištěm!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/resetcss.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="dropdown" style="font-size: 40px">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="container">
+            <ul>
+                <li><a href="#parkour">Co je to Parkour</a></li>
+                <li><a href="#historie">Historie</a></li>
+                <li><a href="#osobnosti">Parkour ve světě</a></li>
+                <li><a href="#česko">Česko a parkour</a></li>
+                <li><a href="#dělení">Dělení</a></li>
+                <li><a href="#zajímavosti">Zajímavosti</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div class="img1"></div>
+        <div class="bg-text">
+            <h1>Parkour</h1>
+            <div class="p">*</div>
+            <div class="p">Svět je tvým hřištěm!</div>
+        </div>
+
+    </header>
+    <main>
+        <img src="css/img/pk3.png" alt="nevim" style="float: left; width: 20%">
+        <div class="container">
+            <h2 class="hranice" id="parkour">Co je to parkour</h2>
+            <p>Mnoho lidí si tento atraktivně vypdající běh spojuje s vandalismem a předváděním se, ale je
+                tomu skutečně tak? Parkour nikdy nebyl o soupeření s ostatními a ničení veřejného majetku. Jde
+                hlavně o
+                překonávání svých limitů, jak fyzických, tak i těch psychických. Techniky, vybavení a další
+                informace
+                nalezneš <a href="parkour.html"><kbd>zde...</kbd></a></p>
+
+            <h2 class="hranice" id="historie">Od počátku po současnost</h2>
+            <p>Kdo definoval pojem parkour. Kde a jak to všechno začalo. Důležité události a předchůdci
+                parkouru. Jestli
+                se zajímáš více o historii této zajímavé disciplíny. <a href="historie.html"><kbd>Tento
+                        článek</kbd></a>
+                je určen pro tebe!</p>
+        </div>
+
+        <img src="css/img/pk1.png" alt="nevim" style="float: right; width: 20%">
+        <div class="container">
+            <h2 class="hranice" id="osobnosti">Nejznámější traceuři světa</h2>
+            <p>Seznam se s parkourovou elitou. <a href="osobnosti.html"><kbd>Na téhle strance</kbd></a> je
+                soupiska nejrespektovanějších, nejznámějších a </p>
+        </div>
+
+        <img src="css/img/pk4.png" alt="nevim" style="float: left; width: 17%">
+        <div class="container">
+            <h2 class="hranice" id="česko">Parkour v zemích koruny české</h2>
+            <p>Dokonce i u nás vznikaly a vznikají parkourové týmy, staví se nové tělocvičny a děti jsou opět po dlouhé
+                době motivovány nesedět doma, ale jít ven a sportovat! <a href="cesko.html"><kbd>Seznam -></kbd></a></p>
+
+            <h2 class="hranice" id="dělení">Dělění a další odrůdy pohybu</h2>
+            <p>Tak jako se rozvíjel pakour, vznikaly paralelně i jiné podobné pohybové techniky. <a
+                    href="deleni.html"><kbd>Přesvěč se sám!</kbd></a></p>
+        </div>
+
+        <img src="css/img/pk2.png" alt="nevim" style="float: right; width: 17%">
+        <div class="container">
+            <h2 class="hranice" id="zajímavosti">Další . . .</h2>
+            <p>Rekordy, hry, filmy, knihy, soutěže, jamy, s parkourovou tématikou a další <a
+                    href="zajimavosti.html"><kbd>zajímavosti</kbd></a>.</p>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div>Reference: <br>
+            <a href="https://cs.wikipedia.org/wiki/Parkour">https://cs.wikipedia.org/wiki/Parkour</a>
+            <br>
+            <a href="https://www.parkour.cz/cs/">https://www.parkour.cz/cs/</a>
+            <br>
+            <a href="http://americanparkour.com/">http://americanparkour.com/</a>
+            <br><br>
+            Vytvořil: Viktor Zwinger 2019
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.dropdown').click(function () {
+                $('.navbar ul').toggle(500);
+            });
+        })
+    </script>
+</body>
+
+</html>

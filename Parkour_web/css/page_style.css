@@ -1,0 +1,377 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    line-height: 150%;
+    counter-reset: h2;
+    background-image: linear-gradient( rgb(211, 150, 17), rgb(255,204,0));
+    }
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.6em 0;
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 50pt;
+    counter-reset: h3;
+    text-align: center;
+    color: rgb(255,204,0);
+    background-color: rgb(48, 48, 48);
+    border-block-start: 50%;
+    border-radius: 60px;
+}
+
+h2::before {
+    content: counter(h2, upper-roman)'. ';
+    counter-increment: h2;
+}
+
+h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+h3::before {
+    content: counter(h2, upper-roman)'.' counter(h3, upper-roman) '.';
+    counter-increment: h3;
+}
+h4 {
+    font-size: 25pt;
+    text-align: center;
+    color: rgb(255,204,0);
+    background-color: rgb(48, 48, 48);
+    max-width: 450px;
+}
+h5 {
+    font-size: 25pt;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    padding-left: 20px;
+        padding-top: 20px;
+}
+
+p {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+
+    text-align: justify;
+    font-size: 23px;
+    /*background-color: rgb(73, 73, 73);*/
+    color: black;
+}
+.p {
+    text-align: center;
+    font-size: 27px;
+    margin: 1em;
+}
+ul {
+    color: black;
+    font-size: 25px;
+    padding-left: 70px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/* Layout - rozložení stránky*/
+.container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: rgb(173, 173, 173);
+}
+
+header {
+    color: rgb(255, 204, 0);
+    background-color:  rgb(48, 48, 48);
+    text-align: center;
+}
+
+footer {
+    background-color:  rgb(48, 48, 48);
+    color: white;
+    padding-top: 2em;
+    text-align: center;
+}
+ul.no {
+    list-style-type: none;
+    background-color: rgb(48, 48, 48);
+    font-size: 22px;
+    font-weight: bold;
+}   
+
+/*Navigace*/
+.navbar {background-color: rgb(48, 48, 48);}
+
+.navbar ul.no {display: flex;}
+/*Zobrazení pro mobily*/
+@media only screen and (max-width: 600px) {
+    .navbar ul.no{
+        display: block;
+    }
+  }
+
+  .navbar ul.no li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255,204,0);
+  }
+
+  .navbar ul.no li a:hover {
+    color: rgb(73,73,73);
+    background-color: rgb(211, 150, 17);
+  }
+
+  .navbar .dropdown {
+      color: rgb(255,204,0);
+      position: absolute;
+      right: 10px;
+      top: 7px;
+  }
+  .secret {font-size: 1px;}
+  .secret0 {font-size: 1px;padding-bottom: 16%;}
+
+.img1 { 
+    background-image:  url("img/in_motion.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+    
+.img2 { 
+    background-image:  url("img/UrbanSense.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+
+.img3 { 
+    background-image:  url("img/FreerunPrajzska.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+
+.img4 { 
+    background-image:  url("img/TeamFreemove.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+
+.img5 { 
+    background-image:  url("img/UrbanMotion.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+
+.img6 { 
+    background-image:  url("img/Farang.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img7 { 
+    background-image:  url("img/Tempest.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img8 { 
+    background-image:  url("img/Storror.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img9 { 
+    background-image:  url("img/FrenchFreerunFamily.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img10 { 
+    background-image:  url("img/GUP.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img11 { 
+    background-image:  url("img/3Run.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img12 { 
+    background-image:  url("img/jiyo.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img13 { 
+    background-image:  url("img/Storm.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img14 { 
+    background-image:  url("img/Ashigaru.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img15 { 
+    background-image:  url("img/generations.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 200px;
+    background-size: 100% 100%;}
+.img16 { 
+    background-image:  url("img/assassins.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 300px;
+    background-size: 100% 100%;}
+.img17 { 
+    background-image:  url("img/Okrsek_13.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 58%;
+    height: 320px;
+    background-size: 100% 100%;}
+.img18 { 
+    background-image:  url("img/ani_ve_snu.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 300px;
+    background-size: 100% 100%;}
+.img19 { 
+    background-image:  url("img/KnihaDavidBelle.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 300px;
+    background-size: 100% 100%;}
+.img20 { 
+    background-image:  url("img/Tary,pribehParkouristy.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 300px;
+    background-size: 100% 100%;}
+.img21 { 
+    background-image:  url("img/SahirKniha.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 300px;
+    background-size: 100% 100%;}
+.img22 { 
+    margin-left: 7em;
+    background-image:  url("img/david-belle.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 400px;
+    background-size: 100% 100%;}
+.img23 { 
+    background-image:  url("img/georgesHebert.jpg");
+    float: left;
+    margin: 0 1.5em;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 300px;
+    background-size: 100% 100%;}
+.img24 { 
+   background-image:  url("img/naturalMethod.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;}
+.img25 { 
+    margin-left: 7em;
+    background-image:  url("img/raymondBelle.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px;
+    background-size: 100% 100%;}
+.img26 { 
+    background-image:  url("img/art-of-motion.jpg");
+    margin: 1em 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: 100% 100%;}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, 
+.img6:hover, .img7:hover, .img8:hover, .img9:hover, .img10:hover, 
+.img11:hover, .img12:hover, .img13:hover, .img14:hover, .img15:hover, 
+.img16:hover, .img17:hover, .img18:hover, .img19:hover, .img20:hover, 
+.img21:hover {
+    -ms-transform: translate(50px, 100px); /* IE 9 */
+    -webkit-transform: translate(50px, 100px); /* Safari */
+    transform: translate(0, -12px);
+    text-shadow: 7px 7px 50px grey;
+}
+    a:link {
+        text-decoration: underline;
+        font-size: 20px;
+}
+    a:visited {color: black;}
+      
+    a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .hranice {
+        border-block-start: 50%;
+        border-radius: 60px;
+        background-color: rgb(48, 48, 48);
+    }  
+
+/*sloupce*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+    .col-6 {width: 50%;} 
+    .col-3 {width: 33%;}
+
+    blockquote { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        text-align: center;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 20px;
+  }
