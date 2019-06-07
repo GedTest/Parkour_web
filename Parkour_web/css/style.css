@@ -86,12 +86,99 @@ footer {
 /*Navigace*/
 .navbar {background-color: rgb(211, 150, 17);}
 
-.navbar ul {display: flex;}
+
 /*Zobrazení pro mobily*/
-@media only screen and (max-width: 600px) {
-    .navbar ul{
-        display: block;
+@media only screen and (max-width: 425px) {
+    h2{font-size: 28px}
+    p{font-size: 22px}
+    .bg-text {
+        background-color: rgba(0,0,0, 0.4);
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        border: 10px solid #f1f1f1;
+        left: 50%;
+        top: 50;
+        transform: translate(-50%, -165%);
+        z-index: 2;
+        width: 350px;
+        text-align: center;
+        position: relative;
     }
+    .img1 {height: 600px;}
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+/* Pro tablety */
+@media only screen and (min-width: 425px) {
+    h2{font-size: 35px;}
+    p{font-size: 25px;}
+    .bg-text {
+        background-color: rgba(0,0,0, 0.4);
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        border: 10px solid #f1f1f1;
+        left: 50%;
+        top: 50;
+        transform: translate(-50%, -165%);
+        z-index: 2;
+        width: 380px;
+        text-align: center;
+        position: relative;
+    }
+    .img1 {height: 840px;}
+  }
+  
+  [class*="col-"] {
+    width: 100%;
+  }
+   /*Počítače*/
+  @media only screen and (min-width: 769px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+      .navbar ul {display: flex;}
+      h2{font-size: 45px;}
+      p{font-size: 30px;}
+      .bg-text {
+          background-color: rgba(0,0,0, 0.4);
+          color: white;
+          font-weight: bold;
+          font-size: 30px;
+          border: 10px solid #f1f1f1;
+          left: 50%;
+          top: 50;
+          transform: translate(-50%, -165%);
+          z-index: 2;
+          width: 380px;
+          text-align: center;
+          position: relative;
+      }
+      .img1{
+        height: 1040px;
+      }
   }
 
   .navbar ul li a {
@@ -115,28 +202,13 @@ footer {
       top: 7px;
   }
 
-  .bg-text {
-    background-color: rgba(0,0,0, 0.4);
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    border: 10px solid #f1f1f1;
-    left: 50%;
-    top: 50;
-    transform: translate(-50%, -165%);
-    z-index: 2;
-    width: 450px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-  }
+
 
   .img1 { 
     background-image:  url("img/David-Belle-parkour.jpg");
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1040px;
     background-size: 100% 100%;}
     
     a:link {text-decoration: underline;}
@@ -186,8 +258,9 @@ footer {
         background-color: rgb(73, 73, 73);
         color: white;
     }
-/*formlulář*/
-       .icon{
+    
+    /*formlulář*/
+        .icon{
             font-size: 55px;
             margin: 0.2em;
             display: block;
@@ -266,6 +339,6 @@ footer {
         background: rgb(48, 48, 48);
     }
     .box{
-        transform: translate(-220%, -348.5%);
+        transform: translate(-220%, -340.5%);
         position: relative;
     }
